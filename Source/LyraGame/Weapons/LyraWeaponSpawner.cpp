@@ -185,6 +185,7 @@ void ALyraWeaponSpawner::SetWeaponPickupVisibility(bool bShouldBeVisible)
 
 void ALyraWeaponSpawner::PlayPickupEffects_Implementation()
 {
+	UE_LOG(LogLyra, Log, TEXT("ALyraWeaponSpawner::PlayPickupEffects_Implementation()"));
 	if (WeaponDefinition != nullptr)
 	{
 		USoundBase* PickupSound = WeaponDefinition->PickedUpSound;
